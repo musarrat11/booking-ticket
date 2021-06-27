@@ -104,20 +104,11 @@
                     </div>
                 </div>
             </div>
-            <button class="btn-style">Book Now</button>
+            <button onClick='alert("Do you really want to proceed?")' class="btn-style">Book Now</button>
         </div>
     </main>
 
     <script>
-//const econobutton1=document.getElementById("plus2");
-//econobutton1.addEventListener("click", function(){
-   // economy(true);
-//})
-
-/*const econobutton2=document.getElementById("minus2");
-econobutton2.addEventListener("click", function(){
-    economy(false);
-})*/
  function ticketPrice(name,isIncrease) {
     const id=document.getElementById(name);
     const idValue=parseInt(id.value);
@@ -138,7 +129,6 @@ econobutton2.addEventListener("click", function(){
         cost=newValue*150;
     }
     totalPrice();
-    //document.getElementById("subtotal").innerText="$"+ cost; 
  }
  function totalPrice() {
     const eco=parseInt(document.getElementById("economy").value) * 100;
